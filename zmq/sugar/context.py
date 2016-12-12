@@ -23,7 +23,7 @@ class Context(ContextBase, AttributeSetter):
     def __init__(self, io_threads=1):
         super(Context, self).__init__(io_threads=io_threads)
         self.sockopts = {}
-        self.MAX_SOCKETS = 128
+        self.MAX_SOCKETS = 100000
     
     # static method copied from tornado IOLoop.instance
     @classmethod
